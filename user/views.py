@@ -17,7 +17,7 @@ def register(request):
 
         newUser.save()
         login(request, newUser)
-        messages.info(request, "You have successfully registered...")
+        messages.info(request, "Congrats! You have successfully registered...")
 
         return redirect("index")
     context = {
